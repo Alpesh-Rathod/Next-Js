@@ -64,7 +64,7 @@ const Portfolio = () => {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             onClick={() => setActiveCategory(category)}
-            className={`px-6 py-2 rounded-full text-sm font-medium transition-all duration-300 ${
+            className={`px-6 py-2 rounded-full text-sm font-medium transition-all duration-300 cursor-pointer ${
               activeCategory === category
                 ? 'bg-[#714B67] text-white shadow-lg shadow-purple-200'
                 : 'bg-white text-gray-700 hover:bg-purple-50 border border-gray-200'
