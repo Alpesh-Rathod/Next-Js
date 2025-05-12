@@ -5,7 +5,7 @@ import { Award, Globe, Users, BarChart } from 'lucide-react';
 export default function AboutUs() {
   return (
     <div className="w-full bg-gradient-to-br from-purple-50 to-white py-16">
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
         <div className="lg:col-span-5 bg-black text-white p-8 rounded-lg">
           <h2 className="text-3xl font-bold mb-6">

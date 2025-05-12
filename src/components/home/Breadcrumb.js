@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-export default function SimpleBreadcrumb({ items }) {
+export default function Breadcrumb({ items }) {
   return (
     <nav className="flex py-4 px-6 text-sm bg-gray-100">
       <ol className="flex items-center space-x-2">
@@ -37,7 +37,7 @@ function AboutPage() {
 
   return (
     <div>
-      <SimpleBreadcrumb items={breadcrumbItems} />
+      <Breadcrumb items={breadcrumbItems} />
        {/* Rest of your page content */}
     </div>
   );

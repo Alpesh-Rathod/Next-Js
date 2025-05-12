@@ -21,7 +21,7 @@ const HeroSection = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="mx-auto text-center lg:text-left flex flex-col justify-center lg:justify-start lg:py-8 flex-1 lg:w-1/2 relative z-[11]"
+          className="mx-auto text-center flex flex-col justify-center lg:justify-start lg:py-8 flex-1 lg:w-1/2 relative z-[11]"
         >
           <motion.h1 
             className="text-[#714B67] text-4xl/snug sm:text-5xl/tight md:text-6xl/tight lg:text-5xl/tight xl:text-8xl/tight font-bold"
@@ -43,7 +43,7 @@ const HeroSection = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.4, duration: 0.8 }}
-            className="mt-6 md:mt-10 text-[#714B67] text-base sm:text-lg md:text-xl lg:text-2xl text-center lg:text-left"
+            className="mt-6 md:mt-10 text-[#714B67] text-base sm:text-lg md:text-xl lg:text-2xl text-center"
           >
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, fugit! Laborum quo maxime
             at sapiente quasi
