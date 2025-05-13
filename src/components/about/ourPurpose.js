@@ -23,7 +23,7 @@ export default function OurPurpose() {
               We focus on creating <span className="font-medium" style={{ color: primaryColor }}>durable long-term solutions</span>, 
               collaborating closely with you to build systems that support your employees 
               and simplify data-driven decision-making for your leadership team.</p>
-            <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
+            <div className="bg-white p-6 rounded-lg border border-gray-100">
               <h3 className="text-lg font-semibold text-gray-800 mb-3">Our Expertise</h3>
               <ul className="space-y-2">
                 <li className="flex items-start">

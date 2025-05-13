@@ -38,7 +38,7 @@ export default function AboutUs() {
         
         <div className="lg:col-span-7">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="bg-white p-6 rounded-lg shadow-md flex flex-col items-start">
+            <div className="bg-white p-6 rounded-lg shadow flex flex-col items-start">
               <div className="bg-gray-100 p-4 rounded-full mb-4">
                 <Users className="h-8 w-8 text-[#714B67]" />
               </div>
@@ -53,7 +53,7 @@ export default function AboutUs() {
               </ul>
             </div>
             
-            <div className="bg-white p-6 rounded-lg shadow-md flex flex-col items-start">
+            <div className="bg-white p-6 rounded-lg shadow flex flex-col items-start">
               <div className="bg-gray-100 p-4 rounded-full mb-4">
                 <BarChart className="h-8 w-8 text-[#714B67]" />
               </div>
@@ -66,7 +66,7 @@ export default function AboutUs() {
               </ul>
             </div>
             
-            <div className="bg-white p-6 rounded-lg shadow-md flex flex-col items-start">
+            <div className="bg-white p-6 rounded-lg shadow flex flex-col items-start">
               <div className="bg-gray-100 p-4 rounded-full mb-4">
                 <Globe className="h-8 w-8 text-[#714B67]" />
               </div>
@@ -80,7 +80,7 @@ export default function AboutUs() {
               </ul>
             </div>
             
-            <div className="bg-white p-6 rounded-lg shadow-md flex flex-col items-start">
+            <div className="bg-white p-6 rounded-lg shadow flex flex-col items-start">
               <div className="bg-gray-100 p-4 rounded-full mb-4">
                 <Award className="h-8 w-8 text-[#714B67]" />
               </div>
