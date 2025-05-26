@@ -89,8 +89,7 @@ export default function OdooServices() {
                 activeService === service.id ? 'ring-2' : ''
               }`}
               style={{ borderColor: activeService === service.id ? odooPrimary : 'transparent' }}
-              onClick={() => setActiveService(activeService === service.id ? null : service.id)}
-            >
+              onClick={() => setActiveService(activeService === service.id ? null : service.id)}>
               <div className="flex items-center mb-4">
                 <div className="rounded-full p-3" style={{ backgroundColor: odooSubColor, color: odooPrimary }}>
                   {service.icon}
@@ -131,6 +130,37 @@ export default function OdooServices() {
           ))}
         </div>
         
+        <div className="mt-16 rounded-lg shadow-xl overflow-hidden" style={{ backgroundColor: odooPrimary }}>
+          <div className="md:flex">
+            <div className="p-8 md:w-2/3">
+              <h2 className="text-2xl font-bold text-white mb-4">Ready to transform your business?</h2>
+              <p className="mb-6" style={{ color: odooSubColor }}>
+                Our team of ODOO experts can help you implement the perfect solution for your business needs.
+                Get in touch for a personalized consultation.
+              </p>
+              <div className="flex flex-wrap gap-4">
+                <button 
+                  className="bg-white px-6 py-3 rounded-md font-medium transition-colors" 
+                  style={{ color: odooPrimary }}
+                >
+                  Request Demo
+                </button>
+                <button 
+                  className="text-white px-6 py-3 rounded-md font-medium transition-colors" 
+                  style={{ backgroundColor: '#5a3c52' }}
+                >
+                  Contact Sales
+                </button>
+              </div>
+            </div>
+            <div className="p-8 md:w-1/3 flex items-center justify-center" style={{ backgroundColor: '#5a3c52' }}>
+              <div className="text-center">
+                <p className="text-xl font-bold text-white mb-2">24/7 Support</p>
+                <p style={{ color: odooSubColor }}>Our expert team is always available to help you</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
