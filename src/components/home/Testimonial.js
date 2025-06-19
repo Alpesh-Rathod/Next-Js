@@ -15,7 +15,7 @@ const Testimonials = () => {
       role: "CEO, Manufacturing Co.",
       content: "Codeshere's Odoo implementation transformed our operations. Their team delivered exactly what we needed on time and under budget. The customization options were perfect for our unique workflow requirements.",
       rating: 5,
-      image: "/woman-portrait.jpg" 
+      image: "/woman-portrait.jpg"
     },
     {
       id: 2,
@@ -23,7 +23,7 @@ const Testimonials = () => {
       role: "Operations Director, Retail Chain",
       content: "The inventory management solution they built saved us 30% in operational costs within the first quarter. Their ongoing support has been exceptional - always responsive and knowledgeable.",
       rating: 5,
-      image: "/man-portrait-1.jpg" 
+      image: "/man-portrait-1.jpg"
     },
     {
       id: 3,
@@ -31,7 +31,7 @@ const Testimonials = () => {
       role: "CFO, Healthcare Provider",
       content: "We struggled with multiple disconnected systems before working with Codeshere. Their integrated Odoo solution gave us the visibility we needed across all departments.",
       rating: 4,
-      image: "/man-portrait-2.jpg" 
+      image: "/man-portrait-2.jpg"
     }
   ];
 
@@ -46,7 +46,7 @@ const Testimonials = () => {
   return (
     <section className="py-20 px-4">
       <div className="max-w-6xl mx-auto">
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
@@ -65,7 +65,7 @@ const Testimonials = () => {
           </p>
         </motion.div>
 
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.6, delay: 0.3 }}
@@ -78,7 +78,7 @@ const Testimonials = () => {
               <motion.div
                 key={testimonial.id}
                 initial={{ opacity: 0, x: index > currentIndex ? 100 : -100 }}
-                animate={{ 
+                animate={{
                   opacity: index === currentIndex ? 1 : 0,
                   x: index === currentIndex ? 0 : (index > currentIndex ? 100 : -100),
                   zIndex: index === currentIndex ? 10 : 1
@@ -87,7 +87,8 @@ const Testimonials = () => {
                 className={`absolute inset-0 shadow-lg p-8 md:p-10 flex flex-col md:flex-row items-center gap-8 ${index === currentIndex ? 'pointer-events-auto' : 'pointer-events-none'}`}
               >
                 {/* Client Image */}
-                <motion.div 
+
+                <motion.div
                   initial={{ scale: 0.9 }}
                   animate={{ scale: 1 }}
                   transition={{ delay: 0.2 }}
@@ -100,6 +101,7 @@ const Testimonials = () => {
                     className="object-cover"
                   />
                 </motion.div>
+
 
                 {/* Testimonial Content */}
                 <div className="flex-1 flex flex-col">
@@ -147,7 +149,7 @@ const Testimonials = () => {
               <ChevronRight size={24} />
             </motion.button>
           </div> */}
- 
+
           {/* Dots Indicator */}
           <div className="flex justify-center mt-6 gap-2">
             {testimonials.map((_, index) => (
