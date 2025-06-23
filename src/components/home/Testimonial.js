@@ -8,41 +8,32 @@ import Image from 'next/image';
 const Testimonials = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
- const testimonials = [
-  {
-    id: 1,
-    name: "Sarah Johnson",
-    role: "CEO, Manufacturing Co.",
-    content: `Codeshere's Odoo implementation transformed our operations. Their team delivered exactly what we needed on time and under budget. The customization options were perfect for our unique workflow requirements.`,
-    rating: 5,
-    image: "/woman-portrait.jpg",
-  },
-  {
-    id: 2,
-    name: "Michael Chen",
-    role: "Operations Director, Retail Chain",
-    content: `The inventory management solution they built saved us 30% in operational costs within the first quarter. Their ongoing support has been exceptional — always responsive and knowledgeable.`,
-    rating: 5,
-    image: "/man-portrait-1.jpg",
-  },
-  {
-    id: 3,
-    name: "David Rodriguez",
-    role: "CFO, Healthcare Provider",
-    content: `We struggled with multiple disconnected systems before working with Codeshere. Their integrated Odoo solution gave us the visibility we needed across all departments: &quot;Sales&quot;, &quot;Finance&quot;, and &quot;Inventory&quot;.`,
-    rating: 4,
-    image: "/man-portrait-2.jpg",
-  },
-];
-
-
-  // const nextTestimonial = () => {
-  //   setCurrentIndex((prev) => (prev === testimonials.length - 1 ? 0 : prev + 1));
-  // };
-
-  // const prevTestimonial = () => {
-  //   setCurrentIndex((prev) => (prev === 0 ? testimonials.length - 1 : prev - 1));
-  // };
+  const testimonials = [
+    {
+      id: 1,
+      name: "Sarah Johnson",
+      role: "CEO, Manufacturing Co.",
+      content: `Codeshere&apos;s Odoo implementation transformed our operations. Their team delivered exactly what we needed on time and under budget. The customization options were perfect for our unique workflow requirements.`,
+      rating: 5,
+      image: "/woman-portrait.jpg",
+    },
+    {
+      id: 2,
+      name: "Michael Chen",
+      role: "Operations Director, Retail Chain",
+      content: `The inventory management solution they built saved us 30% in operational costs within the first quarter. Their ongoing support has been exceptional — always responsive and knowledgeable.`,
+      rating: 5,
+      image: "/man-portrait-1.jpg",
+    },
+    {
+      id: 3,
+      name: "David Rodriguez",
+      role: "CFO, Healthcare Provider",
+      content: `We struggled with multiple disconnected systems before working with Codeshere. Their integrated Odoo solution gave us the visibility we needed across all departments: &quot;Sales&quot;, &quot;Finance&quot;, and &quot;Inventory&quot;.`,
+      rating: 4,
+      image: "/man-portrait-2.jpg",
+    },
+  ];
 
   return (
     <section className="py-20 px-4">
@@ -88,7 +79,6 @@ const Testimonials = () => {
                 className={`absolute inset-0 shadow-lg p-8 md:p-10 flex flex-col md:flex-row items-center gap-8 ${index === currentIndex ? 'pointer-events-auto' : 'pointer-events-none'}`}
               >
                 {/* Client Image */}
-
                 <motion.div
                   initial={{ scale: 0.9 }}
                   animate={{ scale: 1 }}
@@ -103,12 +93,11 @@ const Testimonials = () => {
                   />
                 </motion.div>
 
-
                 {/* Testimonial Content */}
                 <div className="flex-1 flex flex-col">
                   <Quote className="text-[#714B67] w-10 h-10 mb-4 opacity-20" />
                   <p className="text-gray-700 text-lg md:text-xl mb-6 flex-1">
-                    "{testimonial.content}"
+                    {testimonial.content}
                   </p>
                   <div className='text-center md:text-left'>
                     <div className="flex justify-center md:justify-start mb-2">
@@ -130,26 +119,6 @@ const Testimonials = () => {
               </motion.div>
             ))}
           </div>
-
-          {/* Navigation Arrows 
-          <div className="flex justify-center mt-8 gap-4">
-            <motion.button
-              whileHover={{ scale: 1.1, backgroundColor: '#F3E8FF' }}
-              whileTap={{ scale: 0.95 }}
-              onClick={prevTestimonial}
-              className="p-2 rounded-full bg-white shadow-md border border-gray-200 text-[#714B67]"
-            >
-              <ChevronLeft size={24} />
-            </motion.button>
-            <motion.button
-              whileHover={{ scale: 1.1, backgroundColor: '#F3E8FF' }}
-              whileTap={{ scale: 0.95 }}
-              onClick={nextTestimonial}
-              className="p-2 rounded-full bg-white shadow-md border border-gray-200 text-[#714B67]"
-            >
-              <ChevronRight size={24} />
-            </motion.button>
-          </div> */}
 
           {/* Dots Indicator */}
           <div className="flex justify-center mt-6 gap-2">

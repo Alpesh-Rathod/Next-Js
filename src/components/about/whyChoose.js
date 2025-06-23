@@ -3,29 +3,29 @@ import { Code, Cog, Heart, Globe } from "lucide-react";
 
 export default function WhatYouCanExpectSection() {
   const primaryColor = "#714B67";
-  
- const features = [
-  {
-    icon: <Code size={36} color={primaryColor} />,
-    title: 'Deep Expertise',
-    description: `Our team comprises many experienced specialists with the skills, certifications, and portfolio you'd expect from a leading consulting firm.`,
-  },
-  {
-    icon: <Cog size={36} color={primaryColor} />,
-    title: 'Tailored Solutions',
-    description: `We don't take a one-size-fits-all approach and instead provide custom solutions that fit your unique needs.`,
-  },
-  {
-    icon: <Heart size={36} color={primaryColor} />,
-    title: 'Service-First Approach',
-    description: `OSI works closely with you to develop durable solutions, predictable results, and support when you need it.`,
-  },
-  {
-    icon: <Globe size={36} color={primaryColor} />,
-    title: 'Industry Knowledge',
-    description: `Every industry comes with unique business challenges, that's why we built our team of experienced consultants in a variety of industry sectors.`,
-  }
-];
+
+  const features = [
+    {
+      icon: <Code size={36} color={primaryColor} />,
+      title: 'Deep Expertise',
+      description: `Our team comprises many experienced specialists with the skills, certifications, and portfolio you&apos;d expect from a leading consulting firm.`,
+    },
+    {
+      icon: <Cog size={36} color={primaryColor} />,
+      title: 'Tailored Solutions',
+      description: `We don&apos;t take a one-size-fits-all approach and instead provide custom solutions that fit your unique needs.`,
+    },
+    {
+      icon: <Heart size={36} color={primaryColor} />,
+      title: 'Service-First Approach',
+      description: `OSI works closely with you to develop durable solutions, predictable results, and support when you need it.`,
+    },
+    {
+      icon: <Globe size={36} color={primaryColor} />,
+      title: 'Industry Knowledge',
+      description: `Every industry comes with unique business challenges, that&apos;s why we built our team of experienced consultants in a variety of industry sectors.`,
+    }
+  ];
 
   return (
     <section className="py-16">
@@ -40,7 +40,7 @@ export default function WhatYouCanExpectSection() {
           <h2 className="text-4xl font-bold text-gray-900 tracking-tight">What You Can Expect</h2>
           <p className="mt-4 text-lg text-gray-600 max-w-3xl mx-auto">
             Our partnerships are built on transparency, expertise, and a commitment to your success. 
-            Here's what sets us apart:
+            Here&apos;s what sets us apart:
           </p>
         </div>
 
