@@ -13,58 +13,106 @@ const services = [
     id: 1,
     title: "CRM & Sales",
     icon: <Users size={28} />,
-    description: "Boost your sales with our powerful CRM tools. Track leads, manage opportunities, and close deals faster.",
-    features: ["Lead Management", "Sales Pipeline", "Opportunity Tracking", "Customer Communication"]
+    description:
+      "Boost your sales with our powerful CRM tools. Track leads, manage opportunities, and close deals faster.",
+    features: [
+      "Lead Management",
+      "Sales Pipeline",
+      "Opportunity Tracking",
+      "Customer Communication",
+    ],
   },
   {
     id: 2,
     title: "E-Commerce",
     icon: <ShoppingCart size={28} />,
-    description: "Create a stunning online store integrated with your ODOO backend systems for seamless operations.",
-    features: ["Product Catalog", "Payment Gateway", "Inventory Integration", "Mobile-Responsive Design"]
+    description:
+      "Create a stunning online store integrated with your ODOO backend systems for seamless operations.",
+    features: [
+      "Product Catalog",
+      "Payment Gateway",
+      "Inventory Integration",
+      "Mobile-Responsive Design",
+    ],
   },
   {
     id: 3,
     title: "Accounting",
     icon: <FileText size={28} />,
-    description: "Simplify your financial management with comprehensive accounting tools and automated processes.",
-    features: ["Invoicing", "Expense Tracking", "Financial Reports", "Tax Management"]
+    description:
+      "Simplify your financial management with comprehensive accounting tools and automated processes.",
+    features: [
+      "Invoicing",
+      "Expense Tracking",
+      "Financial Reports",
+      "Tax Management",
+    ],
   },
   {
     id: 4,
     title: "Inventory",
     icon: <Database size={28} />,
-    description: "Optimize your inventory management with real-time tracking and automated replenishment.",
-    features: ["Stock Tracking", "Warehouse Management", "Barcode Scanning", "Reordering Rules"]
+    description:
+      "Optimize your inventory management with real-time tracking and automated replenishment.",
+    features: [
+      "Stock Tracking",
+      "Warehouse Management",
+      "Barcode Scanning",
+      "Reordering Rules",
+    ],
   },
   {
     id: 5,
     title: "Manufacturing",
     icon: <Settings size={28} />,
-    description: "Streamline your production processes with our integrated manufacturing solutions.",
-    features: ["Bill of Materials", "Work Orders", "Quality Control", "Resource Planning"]
+    description:
+      "Streamline your production processes with our integrated manufacturing solutions.",
+    features: [
+      "Bill of Materials",
+      "Work Orders",
+      "Quality Control",
+      "Resource Planning",
+    ],
   },
   {
     id: 6,
     title: "Business Intelligence",
     icon: <BarChart size={28} />,
-    description: "Make data-driven decisions with powerful analytics and customizable dashboards.",
-    features: ["Custom Reports", "Interactive Dashboards", "Data Visualization", "KPI Tracking"]
+    description:
+      "Make data-driven decisions with powerful analytics and customizable dashboards.",
+    features: [
+      "Custom Reports",
+      "Interactive Dashboards",
+      "Data Visualization",
+      "KPI Tracking",
+    ],
   },
   {
     id: 7,
     title: "Website Builder",
     icon: <Monitor size={28} />,
-    description: "Create professional websites with our drag-and-drop builder, fully integrated with your ODOO system.",
-    features: ["Drag & Drop Editor", "SEO Tools", "Blog Management", "Form Builder"]
+    description:
+      "Create professional websites with our drag-and-drop builder, fully integrated with your ODOO system.",
+    features: [
+      "Drag &amp; Drop Editor",
+      "SEO Tools",
+      "Blog Management",
+      "Form Builder",
+    ],
   },
   {
     id: 8,
     title: "Project Management",
     icon: <Zap size={28} />,
-    description: "Plan, track, and manage your projects efficiently with collaborative tools and real-time updates.",
-    features: ["Task Management", "Team Collaboration", "Time Tracking", "Gantt Charts"]
-  }
+    description:
+      "Plan, track, and manage your projects efficiently with collaborative tools and real-time updates.",
+    features: [
+      "Task Management",
+      "Team Collaboration",
+      "Time Tracking",
+      "Gantt Charts",
+    ],
+  },
 ];
 
 export default function OdooServices() {

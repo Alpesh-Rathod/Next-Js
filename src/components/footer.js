@@ -8,10 +8,10 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
             <h3 className="text-xl font-bold mb-4">
-                <a className="relative flex items-center gap-2.5" href="/">
+                <div className="relative flex items-center gap-2.5">
                 <span className="flex"><span className="w-3 h-6  bg-[#017E84]"></span>
                 <span className="w-3 h-6  bg-[#714B67] mt-2"></span></span>
-                <span className="text-lg font-bold text-[#714B67]"> Codesphere</span></a>
+                <span className="text-lg font-bold text-[#714B67]"> Codesphere</span> </div>
             </h3>
             <p className="mb-4">Your trusted partner for amazing services and products.</p>
             <div className="flex space-x-4">

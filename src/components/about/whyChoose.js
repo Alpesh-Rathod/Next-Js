@@ -4,28 +4,29 @@ import { Code, Cog, Heart, Globe } from "lucide-react";
 export default function WhatYouCanExpectSection() {
   const primaryColor = "#714B67";
   
-  const features = [
-    {
-      icon: <Code size={36} color={primaryColor} />,
-      title: "Deep Expertise",
-      description: "Our team comprises many experienced specialists with the skills, certifications, and portfolio you'd expect from a leading consulting firm."
-    },
-    {
-      icon: <Cog size={36} color={primaryColor} />,
-      title: "Tailored Solutions",
-      description: "We don't take a one-size-fits-all approach and instead provide custom solutions that fit your unique needs."
-    },
-    {
-      icon: <Heart size={36} color={primaryColor} />,
-      title: "Service-First Approach",
-      description: "OSI works closely with you to develop durable solutions, predictable results, and support when you need it."
-    },
-    {
-      icon: <Globe size={36} color={primaryColor} />,
-      title: "Industry Knowledge",
-      description: "Every industry comes with unique business challenges, that's why we built our team of experienced consultants in a variety of industry sectors."
-    }
-  ];
+ const features = [
+  {
+    icon: <Code size={36} color={primaryColor} />,
+    title: "Deep Expertise",
+    description: "Our team comprises many experienced specialists with the skills, certifications, and portfolio you'd expect from a leading consulting firm."
+  },
+  {
+    icon: <Cog size={36} color={primaryColor} />,
+    title: "Tailored Solutions",
+    description: "We don't take a one-size-fits-all approach and instead provide custom solutions that fit your unique needs."
+  },
+  {
+    icon: <Heart size={36} color={primaryColor} />,
+    title: "Service-First Approach",
+    description: "OSI works closely with you to develop durable solutions, predictable results, and support when you need it."
+  },
+  {
+    icon: <Globe size={36} color={primaryColor} />,
+    title: "Industry Knowledge",
+    description: "Every industry comes with unique business challenges, that&rsquo;s why we built our team of experienced consultants in a variety of industry sectors."
+  }
+];
+
 
   return (
     <section className="py-16">

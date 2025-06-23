@@ -2,6 +2,7 @@
  
 import React, { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
+import Image from 'next/image';
  
 const ContactSection = () => {
   const sectionRef = useRef(null);
@@ -58,9 +59,14 @@ const ContactSection = () => {
           className="mb-6"
           variants={iconVariants}
         >
-          <div className="w-16 h-16 mx-auto bg-transparent flex items-center justify-center">
-            <img src='/icon-handshake.svg' alt="Handshake" />
-          </div>
+         <div className="w-16 h-16 mx-auto bg-transparent flex items-center justify-center">
+  <Image
+    src="/icon-handshake.svg"
+    alt="Handshake"
+    width={64}
+    height={64}
+  />
+</div>
         </motion.div>
        
         {/* Heading with animation */}

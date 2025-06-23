@@ -3,6 +3,8 @@
 import React from 'react';
 import { Linkedin, Twitter, Mail } from 'react-feather';
 
+import Image from "next/image";
+
 // Sample team data
 const teamMembers = [
   {
@@ -61,11 +63,13 @@ const TeamSection = () => {
              <div className="p-6 flex items-start gap-6">
               
                 <div className="flex-shrink-0">
-                  <img 
-                    src={member.image} 
-                    alt={member.name} 
-                    className="w-32 h-32 rounded-full object-cover border-4 border-white shadow-lg"
-                  />
+                 <Image
+  src={member.image}
+  alt={member.name}
+  width={128} // equivalent to w-32
+  height={128} // equivalent to h-32
+  className="rounded-full object-cover border-4 border-white shadow-lg"
+/>
                 </div>
                 
                 <div className="text-left">
