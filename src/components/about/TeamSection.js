@@ -1,8 +1,7 @@
 "use client";
 
 import React from 'react';
-import { Linkedin, Twitter, Mail } from 'react-feather';
-
+import { Linkedin, Twitter, Mail } from 'lucide-react';
 import Image from "next/image";
 
 // Sample team data
@@ -59,22 +58,22 @@ const TeamSection = () => {
         <div className="grid grid-cols-1 gap-8">
           {teamMembers.map((member) => (
             <div key={member.id}
-              className="bg-white rounded-xl overflow-hidden border-1 border-[#f2f2f2] hover:shadow transition-shadow duration-300">
+              className="bg-white rounded-xl overflow-hidden border border-gray-200 hover:shadow-lg transition-shadow duration-300">
              <div className="p-6 flex items-start gap-6">
               
                 <div className="flex-shrink-0">
                  <Image
-  src={member.image}
-  alt={member.name}
-  width={128} // equivalent to w-32
-  height={128} // equivalent to h-32
-  className="rounded-full object-cover border-4 border-white shadow-lg"
-/>
+                  src={member.image}
+                  alt={member.name}
+                  width={128}
+                  height={128}
+                  className="rounded-full object-cover border-4 border-white shadow-lg"
+                />
                 </div>
                 
                 <div className="text-left">
                   <h3 className="text-xl font-semibold text-[#714B67]">{member.name}</h3>
-                  <p className="text-black-600 font-medium mb-3">{member.role}</p>
+                  <p className="text-gray-600 font-medium mb-3">{member.role}</p>
                   <p className="text-gray-600 mb-4">{member.bio}</p>
                   
                   <div className="flex space-x-4">

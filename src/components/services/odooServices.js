@@ -117,6 +117,7 @@ const services = [
 
 export default function OdooServices() {
   const [activeService, setActiveService] = useState(null);
+  const [hoveredButton, setHoveredButton] = useState(null);
   
   return (
     <div className="bg-gray-50 min-h-screen py-12 px-4 sm:px-6 lg:px-8">
@@ -124,7 +125,7 @@ export default function OdooServices() {
         <div className="text-center mb-12">
           <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">ODOO Services</h1>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            Comprehensive business solutions powered by ODOO's integrated platform. 
+            Comprehensive business solutions powered by ODOO&apos;s integrated platform. 
             Streamline your operations with our customizable modules.
           </p>
         </div>
@@ -157,8 +158,10 @@ export default function OdooServices() {
                 </ul>
                 <div className="mt-4">
                   <button 
-                    className="text-white px-4 py-2 rounded-md text-sm font-medium transition-colors"
-                    style={{ backgroundColor: odooPrimary, ':hover': { backgroundColor: '#5a3c52' } }}
+                    className="text-white px-4 py-2 rounded-md text-sm font-medium transition-colors hover:opacity-90"
+                    style={{ backgroundColor: odooPrimary }}
+                    onMouseEnter={() => setHoveredButton(service.id)}
+                    onMouseLeave={() => setHoveredButton(null)}
                   >
                     Learn More
                   </button>

@@ -23,7 +23,7 @@ export default function WhatYouCanExpectSection() {
   {
     icon: <Globe size={36} color={primaryColor} />,
     title: "Industry Knowledge",
-    description: "Every industry comes with unique business challenges, that&rsquo;s why we built our team of experienced consultants in a variety of industry sectors."
+    description: "Every industry comes with unique business challenges, that's why we built our team of experienced consultants in a variety of industry sectors."
   }
 ];
 
