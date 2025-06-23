@@ -8,32 +8,33 @@ import Image from 'next/image';
 const Testimonials = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  const testimonials = [
-    {
-      id: 1,
-      name: "Sarah Johnson",
-      role: "CEO, Manufacturing Co.",
-      content: `Codeshere's Odoo implementation transformed our operations. Their team delivered exactly what we needed on time and under budget. The customization options were perfect for our unique workflow requirements.`,
-      rating: 5,
-      image: "/woman-portrait.jpg"
-    },
-    {
-      id: 2,
-      name: "Michael Chen",
-      role: "Operations Director, Retail Chain",
-      content: `The inventory management solution they built saved us 30% in operational costs within the first quarter. Their ongoing support has been exceptional — always responsive and knowledgeable.`,
-      rating: 5,
-      image: "/man-portrait-1.jpg"
-    },
-    {
-      id: 3,
-      name: "David Rodriguez",
-      role: "CFO, Healthcare Provider",
-      content: `We struggled with multiple disconnected systems before working with Codeshere. Their integrated Odoo solution gave us the visibility we needed across all departments: "Sales", "Finance", and "Inventory".`,
-      rating: 4,
-      image: "/man-portrait-2.jpg"
-    }
-  ];
+ const testimonials = [
+  {
+    id: 1,
+    name: "Sarah Johnson",
+    role: "CEO, Manufacturing Co.",
+    content: `Codeshere's Odoo implementation transformed our operations. Their team delivered exactly what we needed on time and under budget. The customization options were perfect for our unique workflow requirements.`,
+    rating: 5,
+    image: "/woman-portrait.jpg",
+  },
+  {
+    id: 2,
+    name: "Michael Chen",
+    role: "Operations Director, Retail Chain",
+    content: `The inventory management solution they built saved us 30% in operational costs within the first quarter. Their ongoing support has been exceptional — always responsive and knowledgeable.`,
+    rating: 5,
+    image: "/man-portrait-1.jpg",
+  },
+  {
+    id: 3,
+    name: "David Rodriguez",
+    role: "CFO, Healthcare Provider",
+    content: `We struggled with multiple disconnected systems before working with Codeshere. Their integrated Odoo solution gave us the visibility we needed across all departments: &quot;Sales&quot;, &quot;Finance&quot;, and &quot;Inventory&quot;.`,
+    rating: 4,
+    image: "/man-portrait-2.jpg",
+  },
+];
+
 
   // const nextTestimonial = () => {
   //   setCurrentIndex((prev) => (prev === testimonials.length - 1 ? 0 : prev + 1));
